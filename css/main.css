@@ -1,0 +1,82 @@
+* {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+header {
+  background-image: url(/images/bg-main-mobile.png);
+  background-size: cover;
+  max-height: 15rem;
+  color: hsl(0deg, 0%, 100%);
+}
+header .card-container-front {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 7rem 5rem 3rem 1rem;
+}
+header .card-container-front .card-front {
+  display: grid;
+  max-height: 6.5rem;
+  min-width: 15rem;
+  grid-template-rows: repeat(4, 0.5fr);
+  background-image: url(/images/bg-card-front.png);
+  padding: 25px;
+  border-radius: 0.75rem;
+  margin-left: 0.5rem;
+}
+header .card-container-front .card-front svg {
+  margin-bottom: 1rem;
+}
+header .card-container-front .card-front #card-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.75rem;
+  margin-top: 0.75rem;
+  font-weight: 400;
+}
+header .card-container-front .card-front #card-number {
+  letter-spacing: 1.8px;
+  font-size: 1.13rem;
+}
+header .card-container-back .card-back {
+  background-image: url(/images/bg-card-back.png);
+}
+
+#card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 6rem;
+  margin: 0 1.5rem 6rem 1.5rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+#card-info input {
+  border-radius: 0.2rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin: 0.75rem;
+  color: rgba(0, 0, 0, 0.479);
+  font-weight: 400;
+}
+#card-info #cvc {
+  display: grid;
+}
+
+.dNone {
+  display: none;
+}

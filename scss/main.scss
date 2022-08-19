@@ -1,0 +1,87 @@
+
+@import "_var";
+@import "_media";
+
+
+
+* {
+	font-family: 'Space Grotesk', sans-serif;
+	font-weight: 500;
+	margin: 0;
+}
+
+
+
+header {
+	background-image: $bgMobile;
+	background-size: cover;
+	max-height: 15rem;
+	color: $white;
+	.card-container-front {
+		display: flex;
+		justify-content: center;
+		padding: 7rem 5rem 3rem 1rem;
+		.card-front {
+			display: grid;
+			max-height: 6.5rem;
+			min-width: 15rem;
+			grid-template-rows: repeat(4, 0.5fr);
+			background-image: $cardFront;
+			padding: 25px;
+			border-radius: 0.75rem;
+			margin-left: 0.5rem;
+			svg {
+				margin-bottom: 1rem;
+		
+			}
+			#card-name {
+				display: flex;
+				justify-content: space-between;
+				font-size: 0.75rem;
+				margin-top: 0.75rem;
+				font-weight: 400;
+			}
+			#card-number {
+				letter-spacing: 1.8px;
+				font-size: 1.13rem;
+			}
+		}
+	}
+	.card-container-back {
+		.card-back {
+			background-image: $cardBack;
+		}
+	}
+}
+
+
+
+
+
+
+
+#card-info {
+	display: flex;
+	flex-direction: column;
+	padding-top: 6rem;
+	margin: 0 1.5rem 6rem 1.5rem;
+	justify-content: space-evenly;
+	input {
+		border-radius: 0.2rem;
+		font-size: 1.2rem;
+		padding: 0.5rem;
+		margin: 0.75rem;
+		color: rgba(0, 0, 0, 0.479);
+		font-weight: 400;
+		
+	}
+	#cvc {
+		display: grid;
+		
+	}
+}
+
+.dNone {
+	display: none;
+}
+
