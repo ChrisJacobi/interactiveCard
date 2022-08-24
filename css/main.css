@@ -10,6 +10,16 @@ header {
   max-height: 15rem;
   color: hsl(0deg, 0%, 100%);
 }
+header .card-container-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .card-container-back .card-back {
+  max-height: 6.5rem;
+  min-width: 15rem;
+  background-image: url(/images/bg-card-back.pnggit);
+}
 header .card-container-front {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,7 +27,7 @@ header .card-container-front {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 7rem 5rem 3rem 1rem;
+  margin: 7rem 5rem 3rem 1rem;
 }
 header .card-container-front .card-front {
   display: grid;
@@ -48,42 +58,39 @@ header .card-container-front .card-front #card-number {
   font-size: 1.13rem;
 }
 header .card-container-back .card-back {
-  background-image: url(/images/bg-card-back.png);
+  background-image: url(/images/bg-card-back.pnggit);
 }
 
 #card-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 0.8rem;
   padding-top: 6rem;
   margin: 0 1.5rem 6rem 1.5rem;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #card-info h3 {
   letter-spacing: 0.15rem;
+  color: hsl(278deg, 68%, 11%);
+  margin: 0.75rem 0 0.15rem 0;
 }
 #card-info input {
   border-radius: 0.2rem;
   font-size: 1.2rem;
-  padding: 0.5rem;
-  margin: 0.75rem 0.25rem;
-  color: rgba(0, 0, 0, 0.479);
+  padding: 0.75rem;
+  margin: 0.75rem 0.75rem 0.75rem 0;
   font-weight: 400;
-}
-#card-info #cvcTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  border: solid rgba(0, 0, 0, 0.178) 0.25px;
+  width: 95%;
 }
 #card-info #cvc {
   display: -webkit-box;
@@ -94,10 +101,26 @@ header .card-container-back .card-back {
           justify-content: space-evenly;
 }
 #card-info #cvc .date {
-  width: 25%;
+  width: 35%;
+  height: 30%;
 }
 #card-info #cvc #cvcInput {
-  width: 60%;
+  width: 75%;
+  height: 30%;
+}
+#card-info #confirmBtn {
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(278deg, 68%, 11%);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 95%;
+}
+#card-info #confirmBtn:hover {
+  color: hsl(279deg, 6%, 55%);
+  background-color: hsl(278deg, 71%, 7%);
 }
 
 .dNone {

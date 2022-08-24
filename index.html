@@ -18,9 +18,9 @@
 	<!-- start CARD FRONT -->
 	<header>
 		<div class="card-container-back">
-			<span class="card-back">
-				000
-			</span>
+			<div class="card-back">
+				<span>000</span>
+			</div>
 		</div>
 		<div class="card-container-front">
 			<div class="card-front">
@@ -41,20 +41,23 @@
 
 			<h3>CARD NUMBER</h3>
 			<input type="text" placeholder="e.g. 1234 5678 9123 0000">
-			<div id="cvcTitle">	
-				<h3>EXP. DATE (MM/YY)</h3>
-				<h3>CVC</h3>
-			</div>	
+			
 			<div id="cvc">
-				<input class="date" type="text" placeholder="MM">
-				<input class="date" type="text" placeholder="YY">
-				<input id="cvcInput" type="text" placeholder="123">
+				<div>
+					<h3>EXP. DATE (MM/YY)</h3>
+					<input class="date" type="text" placeholder="MM">
+					<input class="date" type="text" placeholder="YY">
+				</div>
+				<div>
+					<h3>CVC</h3>
+					<input id="cvcInput" type="text" placeholder="e.g. 123">
+				</div>
 			</div>
 
 			
 
 			<!-- start CONFIRM BUTTON -->
-			<button> Confirm </button>
+			<button id="confirmBtn"> Confirm </button>
 		</form>	
 	</main>
 

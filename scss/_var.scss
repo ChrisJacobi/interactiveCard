@@ -1,12 +1,27 @@
 
-
+// colors
 
 $white: hsl(0, 0%, 100%);
+
+// button color
+$darkViolet: hsl(278, 68%, 11%);
+
+
+// active state for button text and BG
+$grayViolet: hsl(279, 6%, 55%);
+$veryDark: hsl(278, 71%, 7%);
+
+
+
+
+
+
+// images
 
 $bgMobile: url(/images/bg-main-mobile.png);
 
 $bgDesktop: url(/images/bg-main-desktop.png);
 
-$cardBack: url(/images/bg-card-back.png);
+$cardBack: url(/images/bg-card-back.pnggit);
 
 $cardFront: url(/images/bg-card-front.png);
