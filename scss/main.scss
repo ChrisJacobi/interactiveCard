@@ -20,15 +20,17 @@ header {
 	.card-container-back {
 		display: flex;
 		.card-back {
-			max-height: 6.5rem;
+			min-height: 8rem;
 			min-width: 15rem;
 			background-image: $cardBack;
+			border-radius: 0.75rem;
+			background-size: cover;
 		};
 	}
 	.card-container-front {
 		display: flex;
 		justify-content: center;
-		margin: 7rem 5rem 3rem 1rem;
+		margin-right: 4rem;
 		.card-front {
 			display: grid;
 			max-height: 6.5rem;

@@ -1,3 +1,8 @@
+@media screen and (min-width: 650px) {
+  main {
+    margin: 0 5rem 0 5rem;
+  }
+}
 * {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
@@ -16,9 +21,11 @@ header .card-container-back {
   display: flex;
 }
 header .card-container-back .card-back {
-  max-height: 6.5rem;
+  min-height: 8rem;
   min-width: 15rem;
-  background-image: url(/images/bg-card-back.pnggit);
+  background-image: url(/images/bg-card-back.png);
+  border-radius: 0.75rem;
+  background-size: cover;
 }
 header .card-container-front {
   display: -webkit-box;
@@ -27,7 +34,7 @@ header .card-container-front {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 7rem 5rem 3rem 1rem;
+  margin-right: 4rem;
 }
 header .card-container-front .card-front {
   display: grid;
@@ -58,7 +65,7 @@ header .card-container-front .card-front #card-number {
   font-size: 1.13rem;
 }
 header .card-container-back .card-back {
-  background-image: url(/images/bg-card-back.pnggit);
+  background-image: url(/images/bg-card-back.png);
 }
 
 #card-info {
